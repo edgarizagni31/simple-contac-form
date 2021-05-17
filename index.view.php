@@ -8,6 +8,7 @@
 </head>
 <body>
     <main class="main">
+        <h1 class="title">Formulario de contacto</h1>
         <form 
             action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" 
             method="post"
@@ -26,11 +27,12 @@
             } 
 
             if ( $send ) {
-              echo  "<div class='alert success'>";
+              echo  "<div class='alert success' id='alertSuccess'>";
               echo "<p class='text success'>Enviado Corectamente</p>";
               echo "</div>";
             }
         ?>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
