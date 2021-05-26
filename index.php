@@ -1,4 +1,7 @@
-<?php  
+<?php
+    require 'vendor/autoload.php';
+    require 'libs/send_email.php';
+
     $errors = '';
     $send = false;
 
@@ -42,9 +45,7 @@
             $message_final = "De: ".$name."\n";
             $message_final .= "Correo: ".$email."\n";
             $message_final .= "Mensaje: ".$message."\n"; 
-
-
-            $send = true;
+            $send = send_email($to, $name, $subject, $message_final);
         }
     }
 
