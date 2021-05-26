@@ -1,0 +1,15 @@
+{
+    "name": "edgar/contact-form",
+    "description": "simple contact form",
+    "authors": [
+        {
+            "name": "edgar ochoa",
+            "email": "eom3108@gmail.com",
+            "homepage": "https://edgarizagni.netlify.app/"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.4",
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
