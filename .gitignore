@@ -1,0 +1,4 @@
+# depedencies
+vendor/
+# misc
+.env 
